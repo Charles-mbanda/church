@@ -1,0 +1,194 @@
+/* styling the inputs */
+input[type=text], [type=email], [type=password], select{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+/* the submit button */
+#sub {
+    justify-content: center;
+    margin-left: 45%;
+}
+/* styling the labels */
+label {
+    margin: auto;
+    display: flex;
+}
+/* styling the submit button */
+input[type=submit] {
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 6px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* styling the submit button on hover */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* styling the 25 */
+.col-25 {
+    float: left;
+    margin-top: 6px;
+    margin-right: 10px;
+    width: 20%;
+    font-family: Verdana,sans-serif;
+    font-weight: bold;
+    font-size: 1.75vh;
+}
+
+/* styling the col-75 */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+/* the church groups */
+#groups {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* the church groups table headers and table data */
+#groups td, #groups th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+/* Style the table row background */
+#groups tr:nth-child(even){background-color: #f2f2f2;}
+
+/* Style the table row on hover*/
+#groups tr:hover {background-color: #ddd;}
+
+/* Styling the group headers */
+#groups th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #0d6efd;
+    color: white;
+}
+
+/* The Mission and Vision Area */
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* the navbar search bar */
+.search {
+    margin: auto;
+    padding: 4px 16px;
+    height: 12px !important;
+}
+
+/* style the labels for support our projects form */
+#lbl {
+    font-size: 2.5vh;
+    width: 100%;
+}
+/* style the input fields for support our projects form */
+#input {
+    width: 100%;
+    padding: 8px;
+}
+#input input[type=text], [type=email], [type=password], select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+/* The Payment Button */
+#row {
+    padding: 0 20px;
+}
+.submit input[type=submit] {
+    width: 25%;
+    display: flex;
+}
+
+
+
+/* at media only screens styles */
+@media only screen and (max-width: 789px) {
+    /* style the about us button */
+    #id {
+        width: 100px !important;
+    }
+    /* mission & vision */
+    #vim {
+        margin-top: -55% !important;
+    }
+    /* style the mission */
+    #mis {
+        margin-top: 40px;
+    }
+    /* our vision */
+    #vis {
+        margin-top: 20px;
+    }
+    /* the sign up for a group form */
+    #sign {
+        margin-top: 50px;
+    }
+    /* section */
+    section {
+        display: grid;
+        flex-wrap: wrap;
+    }
+    /* The News */
+    #news {
+        width: 100% !important;
+        margin-top: -20px;
+    }
+    /* The article */
+    article {
+        display: flex;
+        width: 100% !important;
+        height: auto;
+    }
+
+    /* the top nav search bar */
+    .sbar {
+        margin-left: 150px;
+        position: fixed;
+        border-radius: 10px;
+    }
+
+    /* style the support our church projects form */
+    #f1 {
+        margin: 10px 5% !important;
+    }
+
+    /* style the labels for support our projects form */
+    #lbl {
+        width: 100%;
+        font-size: 2vh;
+    }
+
+    /* style the input fields for support our projects form */
+    #input {
+        width: 100%;
+    }
+    button [type=button] {
+        font-size: 2.5vw;
+        font-family: Verdana,sans-serif;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    /* The Payment Button */
+    #row {
+        padding: 0;
+    }
+}
